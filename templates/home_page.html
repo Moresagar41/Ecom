@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block main %}
+    <h1 class=text-center style="color:red;">Welcome To Ecom Website</h1>
+    <h3>
+    {% if msg %}
+      {{msg}}
+    {% endif %}
+    </h3>
+
+    <ol>
+      {% for i in lst %}
+          <li> {{i}} </li>
+      {% endfor %}
+    </ol>
+{% endblock %}
